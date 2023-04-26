@@ -1,4 +1,6 @@
 <template>
+  <div class="square-bg">
+  </div>
   <ul class="square-ul" :style="{right:po.right,top:po.top}">
     <li v-for="index in 5" :key="index" :style="{background:co[index]}">
       <span v-if="index<2" class="upLine"></span>
