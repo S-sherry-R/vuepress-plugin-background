@@ -1,7 +1,7 @@
 import type { PluginObject } from 'vuepress';
 interface BackOptions {
-    position?: object;
-    color?: string[];
+    type?: String;
+    options?: Object;
 }
 declare const backPlugin: (options?: BackOptions) => () => PluginObject;
 declare const BackOptions: BackOptions;

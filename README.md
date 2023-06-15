@@ -30,18 +30,49 @@ export default defineUserConfig({
 
 ```ts
 backPlugin({
-    //立体正方形在页面中的位置
-    position:{right: '50px',top:'100px'},
-    //立体正方形六个面的颜色
-    color: [
-        'rgba(171, 221, 164,0.4)',
-        'rgba(102, 194, 165,0.4)',
-        'rgba(50, 136, 189,0.4)',
-        'rgba(254, 224, 139,0.4)',
-        'rgba(244, 109, 67,0.4)',
-        'rgba(213, 62, 79,0.4)',
-    ]
+    type: '',
+    option: {}
 })
 ```
+### type
+`string`
+
+背景类型，可选：'square'，'circle3d'
+
+### option
+`object`
+
+样式
+
+* square
+```js
+{
+  //立体正方形在页面中的位置
+  position:{right: '50px',top:'100px'},
+  //立体正方形六个面的颜色
+  color: [
+    'rgba(171, 221, 164,0.4)',
+    'rgba(102, 194, 165,0.4)',
+    'rgba(50, 136, 189,0.4)',
+    'rgba(254, 224, 139,0.4)',
+    'rgba(244, 109, 67,0.4)',
+    'rgba(213, 62, 79,0.4)',
+  ]
+}
+```
+* circle3d
+```js
+{
+  //圈的颜色
+  color: [
+    '#a33aff',
+    '#fda34b',
+    '#ff164b',
+    '#0c1db8',
+    '#ffffff',
+  ]
+}
+```
+
 ## 许可证
 [MIT](https://github.com/S-sherry-R/vuepress-plugin-background/blob/master/LICENSE)
