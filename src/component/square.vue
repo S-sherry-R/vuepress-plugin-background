@@ -13,8 +13,8 @@
 
 <script lang="ts" setup>
 import {ref} from 'vue';
-const po = ref(BackOptions.position)
-const co = ref(BackOptions.color)
+const po = ref(BackOptions.options.position)
+const co = ref(BackOptions.options.color)
 console.log('vuepress-plugin-background')
 </script>
 <style scoped lang="scss">

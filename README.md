@@ -30,17 +30,20 @@ export default defineUserConfig({
 
 ```ts
 backPlugin({
-    //立体正方形在页面中的位置
-    position:{right: '50px',top:'100px'},
-    //立体正方形六个面的颜色
-    color: [
+    type: 'square',
+    options:{
+      //立体正方形在页面中的位置
+      position:{right: '50px',top:'100px'},
+      //立体正方形六个面的颜色
+      color: [
         'rgba(171, 221, 164,0.4)',
         'rgba(102, 194, 165,0.4)',
         'rgba(50, 136, 189,0.4)',
         'rgba(254, 224, 139,0.4)',
         'rgba(244, 109, 67,0.4)',
         'rgba(213, 62, 79,0.4)',
-    ]
+      ]
+    }
 })
 ```
 ## 许可证

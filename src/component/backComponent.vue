@@ -1,15 +1,11 @@
 <template>
-  <circle3d></circle3d>
-  <square></square>
+  <component :is="componentPath"></component>
 </template>
 
-<script>
-import Circle3d from "./circle3d.vue";
-import Square from "./square.vue";
-export default {
-  name: "backComponent",
-  components: {Square, Circle3d}
-}
+<script lang="ts" setup>
+import {defineAsyncComponent} from 'vue';
+const type = BackOptions.type
+const componentPath = defineAsyncComponent(()=>import('./'+type+'.vue'))
 </script>
 
 <style scoped>
