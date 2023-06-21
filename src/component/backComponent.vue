@@ -5,7 +5,7 @@
 <script lang="ts" setup>
 import {defineAsyncComponent} from 'vue';
 const type = BackOptions.type
-const componentPath = defineAsyncComponent(()=>import('./'+type+'.vue'))
+const componentPath = defineAsyncComponent(()=>import('./part'+type+'.vue'))
 </script>
 
 <style scoped>
