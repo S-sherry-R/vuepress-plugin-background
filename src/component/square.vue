@@ -15,7 +15,7 @@
 import {ref} from 'vue';
 const po = ref(BackOptions.options.position)
 const co = ref(BackOptions.options.color)
-console.log('vuepress-plugin-background')
+console.log('vuepress-plugin-background-square')
 </script>
 <style scoped lang="scss">
 @import "../style/square.scss";

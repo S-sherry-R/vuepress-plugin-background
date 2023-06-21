@@ -1,6 +1,6 @@
 <template>
-  <Particles
-      style="height: 100%;width:100%"
+  <ParticlesComponent
+      class="normalLine"
       id="tsparticles"
       :particlesInit="particlesInit"
       :particlesLoaded="particlesLoaded"
@@ -9,13 +9,15 @@
 </template>
 
 <script lang="ts" setup>
+import {ParticlesComponent} from 'particles.vue3'
 import {ref} from 'vue';
 import { loadFull } from "tsparticles";
+//背景颜色
+const backColor=ref(BackOptions.options.backColor)
 const options =ref({
-  // background：color,image,opacity,position,repeat,size
   background: {
     color: {
-      value: '#0e0e0e'
+      value: backColor
     },
   },
   //cssStyle
@@ -130,9 +132,15 @@ const particlesInit = async (engine: any) => {
 const particlesLoaded = async (container: any) => {
   console.log("Particles container loaded", container);
 };
-
+console.log('vuepress-plugin-background-normal')
 </script>
 
 <style scoped>
-
+.normalLine{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>

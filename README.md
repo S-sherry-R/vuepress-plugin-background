@@ -28,6 +28,7 @@ export default defineUserConfig({
 * 如果不想修改配置，使用默认配置则直接调用`backPlugin()`即可。
 * 如果想自己配置，提供以下配置：
 
+1、立方体
 ```ts
 backPlugin({
     type: 'square',
@@ -44,6 +45,17 @@ backPlugin({
         'rgba(213, 62, 79,0.4)',
       ]
     }
+})
+```
+2、运动线条
+
+```ts
+backPlugin({
+  type: 'normalLine',
+  options:{
+    //背景颜色
+    backColor: ''
+  }
 })
 ```
 ## 许可证
