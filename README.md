@@ -29,6 +29,7 @@ export default defineUserConfig({
 * 如果想自己配置，提供以下配置：
 
 1、立方体
+![](images/square.png)
 ```ts
 backPlugin({
     type: 'square',
@@ -48,7 +49,7 @@ backPlugin({
 })
 ```
 2、运动线条
-
+![](images/normalLine.png)
 ```ts
 backPlugin({
   type: 'normalLine',

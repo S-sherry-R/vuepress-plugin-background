@@ -1,5 +1,5 @@
 <template>
-  <ParticlesComponent
+  <Particles
       class="normalLine"
       id="tsparticles"
       :particlesInit="particlesInit"
@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts" setup>
-import {ParticlesComponent} from 'particles.vue3'
+
 import {ref} from 'vue';
 import { loadFull } from "tsparticles";
 //背景颜色
@@ -130,7 +130,7 @@ const particlesInit = async (engine: any) => {
 };
 
 const particlesLoaded = async (container: any) => {
-  console.log("Particles container loaded", container);
+  console.log("Particles container loaded");
 };
 console.log('vuepress-plugin-background-normal')
 </script>
